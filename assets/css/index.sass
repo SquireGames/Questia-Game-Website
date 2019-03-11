@@ -5,7 +5,6 @@ $font-size: calc(0.8em + 0.25vw)
 $heading-weight: 300
 
 @import basic
-@import darkmode
 @import layout
 @import code
 @import table
@@ -40,7 +39,6 @@ article footer
 .changepage
   padding: 1em 0
 
-{% unless site.hide_title %}
 {% if site.navigation and site.icons %}
 
 nav
@@ -58,4 +56,3 @@ body > header h1
   font-size: 1.7em
 
 {% endif %}
-{% endunless %}
