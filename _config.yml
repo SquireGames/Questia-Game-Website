@@ -18,8 +18,18 @@ navigation:
   - archive.md
   - development.md
 
-icons:                       # (optional) icons in the header, see http://fontawesome.com/icons
+dev_navigation:
+  - index.html
+  - development.md
+  - engine.md
+  - gamedev.md
+  - website.md
+
+icons:
   github: "https://github.com/SquireGames/Questia"
+
+dev_icons:
+  github: "https://github.com/SquireGames/"
 
 plugins: 
  - jekyll-feed

@@ -1,0 +1,5 @@
+<header>
+    <h1><a href="{{ "/" | relative_url }}">{{ site.title | escape }}</a></h1>
+    {% if site.navigation %}<nav>{% for path in site.navigation %}{% assign node = site.pages | where: "name", path | first %}<a href="{{ node.url | relative_url }}" {% if page.name == path %}class="currentpage"{% endif %}>{{ node.title }}</a>{% endfor %}</nav>{% endif %}
+    {% if site.icons %}<nav>{% for link in site.icons %}<a class="icon" href="{{ link[1] }}"><svg><use xlink:href="{{ "/assets/fontawesome/icons.svg" | relative_url }}#{{ link[0] }}"></use></svg></a>{% endfor %}</nav>{% endif %}    
+</header>
