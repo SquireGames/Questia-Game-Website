@@ -12,8 +12,11 @@ date_format: "%B %d, %Y"     # see http://shopify.github.io/liquid/filters/date/
 
 navigation:
   - index.html
+  - play.md
   - about.md
+  - wiki.md
   - archive.md
+  - development.md
 
 icons:                       # (optional) icons in the header, see http://fontawesome.com/icons
   github: "https://github.com/SquireGames/Questia"
