@@ -1,0 +1,26 @@
+---
+layout: dev_default
+---
+
+<div class="flex-aligner">
+
+<div class="sidebar">
+<ul style="list-style-type:none">
+    {% for element in site.dev_sidebar.webdev %}
+        {% if element contains ':' %}
+            <h2> {{ element | remove: ':' }} </h2>
+        {% else %}
+            {% assign node = site.pages | where: "name", element | first %}
+            <li> 
+                <a href="{{ node.url | relative_url }}" {% if page.name == element %}class="currentsidebarpage"{% endif %}>{{ node.title }}</a>
+            </li>
+        {% endif %}
+    {% endfor %}
+</ul>
+</div>
+
+<article class="article-panel"><div class="articlebox">
+    <header><h1>{{ page.dev_title }}</h1></header>
+        {{ content }}
+    </div></article>
+</div>

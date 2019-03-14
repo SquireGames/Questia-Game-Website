@@ -1,4 +1,5 @@
 ---
-layout: dev_sidebar
+layout: dev_game_sidebar
+title: "Overview"
 dev_title: "Game"
 ---

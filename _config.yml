@@ -23,7 +23,22 @@ dev_navigation:
   - development.md
   - engine.md
   - gamedev.md
-  - website.md
+  - webdev.md
+
+dev_sidebar:
+  engine:
+    - :General
+    - engine.md
+    - engine_install.md
+    - :Plans
+    - engine_milestones.md
+  game:
+    - :General
+    - gamedev.md
+  webdev:
+    - :General
+    - webdev.md
+
 
 icons:
   github: "https://github.com/SquireGames/Questia"
