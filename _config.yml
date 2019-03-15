@@ -27,16 +27,16 @@ dev_navigation:
 
 dev_sidebar:
   engine:
-    - :General
+    - :Questia Engine
     - engine.md
     - engine_install.md
     - :Plans
     - engine_milestones.md
   game:
-    - :General
+    - :Questia
     - gamedev.md
   webdev:
-    - :General
+    - :Questia Website
     - webdev.md
 
 
