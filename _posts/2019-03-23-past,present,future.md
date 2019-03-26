@@ -1,6 +1,6 @@
 ---
 author: Matthew Kaminski
-title: What is Questia, its History and its Future
+title: What Questia is, its History and its Future
 ---
 
 Questia is a 2D action-adventure game primarily centered around questing and boss fighting.
@@ -9,12 +9,12 @@ However, unlike many of the similar games currently available, Questia will feat
 As much as I would like to delve into specifics about the game, Questia is still very early into development and will not
   be complete for a while.
 The game, along with its engine, just recently started being rewritten from the ground up, but earlier versions of the project
-  are still available in the _Play_ page. 
+  are still available in the [Play]({{ site.baseurl }}{% link play.md %}) page. 
 If you are interested in contributing to this project, anybody at any skill-level can send me a message via the contact information
-  provided in the _About_ page.
+  provided in the [About]({{ site.baseurl }}{% link about.md %}) page.
 
-     
-# Development and Design 
+
+## Development and Design 
 
 Some of the technical design goals for the project include:
 - following modern C++ coding practices
@@ -52,7 +52,7 @@ Questia Engine is _not_ meant to replace existing game engines and libraries suc
   but rather is meant to build an efficient and multiplayer-capable framework for specifically envisioned projects. 
 
 
-# History
+## History
 
 The origin of Questia dates all the way back to the end of 2014, when I wanted to embark on a simple project
   shortly after I had just started teaching myself programming.
@@ -64,9 +64,9 @@ Questia used various dependencies over the years, including Boost, Cryptopp, Ang
 The original code and builds are still available on the _Play_ page, and the original repositories are still found in the GitHub organization.
 Here are some old screenshots of Questia:
 
-{% include post_image.html url="2019-03-23/Main_Menu.png" description="Main Menu" %}
-{% include post_image.html url="2019-03-23/In_Game.png" description="A goblin harassing a chicken, colorized" %}
-{% include post_image.html url="2019-03-23/In_Game_2.png" description="Shooting an arrow at an unsuspecting house" %}
-{% include post_image.html url="2019-03-23/Map_Editor.png" description="Map Editor" %}
+{% include post_image.html url="2019-03-23/Main_Menu.png" description="Old Main Menu" %}
+{% include post_image.html url="2019-03-23/In_Game.png" description="A goblin killing a chicken" %}
+{% include post_image.html url="2019-03-23/In_Game_2.png" description="Shooting an arrow at a house" %}
+{% include post_image.html url="2019-03-23/Map_Editor.png" description="Old Map Editor" %}
 {% include post_image.html url="2019-03-23/Old_Website.png" description="Old Website" %}
  
