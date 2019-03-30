@@ -11,7 +11,7 @@ As much as I would like to delve into specifics about the game, Questia is still
 The game, along with its engine, just recently started being rewritten from the ground up, but earlier versions of the project
   are still available in the [Play]({{ site.baseurl }}{% link play.md %}) page. 
 If you are interested in contributing to this project, anybody at any skill-level can send me a message via the contact information
-  provided in the [About]({{ site.baseurl }}{% link about.md %}) page.
+  provided in the [Contact]({{ site.baseurl }}{% link contact.md %}) page.
 
 
 ## Development and Design 
