@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block body %}
+
+{% set section = get_section(path="posts/_index.md") %}
+
+<article class="archive"><article class="articlebox">
+    {{ page.content | safe }}
+
+    <header><h1>Posts</h1></header>
+    {% for post in section.pages %}
+        <div>
+        <time datetime="{{ post.date }}">{{ post.date | date(format="%B %d, %Y") }}</time>
+        <h3><a href="{{ post.permalink }}">{{ post.title }}</a></h3>
+        </div>
+    {% endfor %}
+	
+</article></article>
+
+{% endblock body %}

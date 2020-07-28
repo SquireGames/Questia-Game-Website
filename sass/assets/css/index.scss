@@ -1,0 +1,75 @@
+$font-size: calc(0.8em + 0.25vw);
+$heading-weight: 300;
+
+@import "basic";
+@import "layout";
+@import "code";
+@import "table";
+@import "highlight";
+@import "variables";
+
+@import "fontawesome/fontawesome.scss";
+
+body {
+  display: flex;
+  min-height: 100vh;
+}
+
+table {
+  width: 100%;
+}
+
+h1 {
+  font-size: 1.85em;
+}
+
+ul h2 {
+  margin-top: 5;
+  margin-bottom: 0;
+  font-size: 1.4em;
+}
+
+ul a {
+  color: blue;
+}
+
+ul {
+  padding: 0px;
+  margin: 15px;
+}
+
+header h1, .dev header h1 {
+  margin: 0;
+}
+
+article header {
+  flex-direction: column;
+  align-items: inherit;
+}
+
+article header {
+  margin-bottom: 0.5em;
+}
+
+article header h1 {
+  margin: 0.2em 0;
+}
+
+article footer {
+  padding: 1em 0;
+}
+
+.changepage {
+  padding: 1em 0;
+}
+
+nav {
+  margin-top: 1em;
+  margin-bottom: -1em;
+}
+
+body > header h1, body > .dev header h1 {
+  width: 100%;
+  line-height: 0.5;
+  margin-bottom: 0em;
+}

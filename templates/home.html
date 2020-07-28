@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block body %}
+
+
+{% set resource = section | default(value = page) -%}
+{% set section = get_section(path="posts/_index.md") %}
+
+
+{#
+	Paginator is not accessible from this url so posts are manually sliced
+#}	
+{% for post in section.pages | slice(end=4) %}
+	<article><div class="articlebox">
+
+	<header>
+		<h1><a href="{{ post.permalink }}">{{ post.title }}</a></h1>
+		<time datetime="{{ post.date }}">{{ post.date | date(format="%B %d, %Y") }}</time>
+	</header>
+
+	{{ post.summary | safe }}
+
+	<footer><a class="ghost" href="{{ post.permalink }}">Continue Reading</a></footer>
+
+	</div></article>
+{% endfor %}
+
+{#
+	Paginator is not accessible from this url, so 'fake' next page section
+#}	
+<div class="changepage">
+	<span></span>
+	<a class="gray" href="posts/page/2">older posts »</a>
+</div>
+
+
+{% endblock body %}

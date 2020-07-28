@@ -1,0 +1,96 @@
+@import "variables";
+
+body {
+  font-family: "Segoe UI", system-ui, -apple-system, Roboto, Helvetica, Arial, sans-serif;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body, blockquote, figure {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+  transition: color 0.2s;
+
+  &.selected, &:hover {
+    color: $grey;
+  }
+}
+
+article a, b, strong, th {
+  font-weight: $font-weight + 100;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: $heading-weight;
+}
+
+article a {
+  color: $link-color;
+}
+
+article header a, article footer a {
+  font-weight: inherit;
+  color: inherit;
+}
+
+.articlebox {
+  border-radius: 3px;
+  padding: 25px;
+  background: $lightgrey;
+}
+
+.flex-aligner {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: center;
+  min-height: 100vh;
+  align-items: flex-start;
+}
+
+.sidebar {
+  border-radius: 3px;
+  width: 100px;
+  overflow-x: hidden;
+  background: $lightgrey;
+  word-wrap: break-word;
+  flex: 0 0 $sidebar-width;
+  padding: 5px;
+}
+
+.article-panel {
+  flex: 1 1 auto;
+}
+
+header time {
+  color: reduce(100);
+}
+
+hr {
+  border: 1px solid reduce(30);
+  margin: 2em 0;
+}
+
+blockquote {
+  border-left: 4px solid $link-color;
+  padding-left: 1.5em;
+}
+
+img {
+  border-radius: 2px;
+  max-width: 100%;
+  height: auto;
+  margin: 0.5em 0;
+}
+
+.changepage {
+  font-weight: inherit;
+  color: inherit;
+}
