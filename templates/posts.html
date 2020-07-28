@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block body %}
+
+
+{% set resource = section | default(value = page) -%}
+{% set section = get_section(path="posts/_index.md") %}
+
+
+{#
+	Paginator is not accessible from this url so posts are manually sliced
+#}	
+{% for post in paginator.pages %}
+	<article><div class="articlebox">
+
+    <header>
+        <h1><a href="{{ post.permalink }}">{{ post.title }}</a></h1>
+        <time datetime="{{ post.date }}">{{ post.date | date(format="%B %d, %Y") }}</time>
+    </header>
+
+    {{ post.summary | safe }}
+
+	<footer><a class="ghost" href="{{ post.permalink }}">Continue Reading</a></footer>
+
+	</div></article>
+{% endfor %}
+
+{#
+	Paginator is not accessible from this url so 'fake' next page section
+#}	
+<div class="changepage">
+    {% if paginator.previous %}
+        <a class="gray" href="{{ paginator.previous }}">« newer posts</a>
+    {% else %}
+        <a class="disabled">« newer posts</a>
+    {% endif %}
+
+    <span>page {{ paginator.current_index }} of {{ paginator.number_pagers }}</span>
+
+    {% if paginator.next %}
+        <a class="gray" href="{{ paginator.next }}">older posts »</a>
+    {% else %}
+        <a class="disabled">older posts »</a>
+    {% endif %}
+</div>
+
+
+{% endblock body %}

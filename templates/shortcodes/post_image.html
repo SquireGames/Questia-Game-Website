@@ -1,0 +1,6 @@
+<figure class = "image">
+    <img src="/assets/images/posts/{{ page.date }}/{{ path }}" {% if description %}alt="{{ description }}"{% endif %}>
+    {% if description %} 
+        <figcaption>{{ description }}</figcaption>
+    {% endif %}
+</figure>

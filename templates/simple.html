@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block body %}
+
+{% set resource = section | default(value = page) -%}
+
+<article><div class="articlebox">
+
+	<header>
+		<h1> {{ resource.title | safe }} </h1>
+	</header>
+
+	{{ resource.content | safe }}
+
+</div></article>
+
+{% endblock body %}

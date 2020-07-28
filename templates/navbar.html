@@ -1,0 +1,36 @@
+
+<header>
+    <h1><a href="/"> Questia </a></h1>
+    <nav>
+        {% set section = get_section(path="_index.md") %}
+
+        <a href='/'
+        {% if current_path == '/' %} 
+            class="currentpage" 
+        {% endif %}
+        > Home </a>
+
+        {% for post in section.pages %}
+            <a 
+            {% if post.path == current_path %} 
+                class="currentpage" 
+            {% endif %}
+            href=/{{ post.path }}
+            >
+                {{ post.title }} 
+            </a>
+        {% endfor %}
+    </nav>
+
+    {% if config.extra.game_header_icons %}
+    <nav>
+        {% for icon in config.extra.game_header_icons %}
+        <a class="icon" href="{{ icon.link }}">
+            <i class="{{ icon.icon }}"></i>
+        </a>
+        {% endfor %}
+    </nav>
+    {% endif %}    
+
+</header>
+
