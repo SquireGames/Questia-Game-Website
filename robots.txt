@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://questiagame.com/sitemap.xml

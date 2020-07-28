@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://questiagame.com/</loc>
+    </url>
+    <url>
+        <loc>https://questiagame.com/about/</loc>
+    </url>
+    <url>
+        <loc>https://questiagame.com/archive/</loc>
+    </url>
+    <url>
+        <loc>https://questiagame.com/contact/</loc>
+    </url>
+    <url>
+        <loc>https://questiagame.com/play/</loc>
+    </url>
+    <url>
+        <loc>https://questiagame.com/posts/</loc>
+    </url>
+    <url>
+        <loc>https://questiagame.com/posts/first-post/</loc>
+        <lastmod>2020-08-07</lastmod>
+    </url>
+    <url>
+        <loc>https://questiagame.com/posts/old-questia/</loc>
+        <lastmod>2020-08-07</lastmod>
+    </url>
+    <url>
+        <loc>https://questiagame.com/posts/page/1/</loc>
+    </url>
+    <url>
+        <loc>https://questiagame.com/wiki/</loc>
+    </url>
+</urlset>

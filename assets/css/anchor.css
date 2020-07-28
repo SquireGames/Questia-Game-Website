@@ -1,0 +1,1 @@
+a.ghost,a.gray,a.disabled{border-radius:2px;padding:0.4em 0.8em}a.ghost{background:#c49102;box-shadow:0 0 0 2px #c49102 inset;color:white;transition:0.1s}a.ghost:hover{background:transparent;color:#c49102}a.gray,a.disabled{background:#e6e6e6;transition:background, 0.2s}a.gray:hover,a.disabled:hover{color:inherit}a.gray:hover{background:#b3b3b3}
